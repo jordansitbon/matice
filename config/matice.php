@@ -30,7 +30,18 @@ return [
     | The place where to generate translations file.
     |
     */
-    'generate_translations_path' => resource_path('assets/js/matice_translations.js'),
+    'generate_translations_path' => storage_path('framework/cache/translations.js'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Add Export to generated translations file
+    |--------------------------------------------------------------------------
+    |
+    | Whether @translations should always use the generated translations in production.
+    | If false, the @translations directive will always regenerate the translations.
+    |
+    */
+    'use_export_in_generated_translations' => false,
 
     /*
     |--------------------------------------------------------------------------
