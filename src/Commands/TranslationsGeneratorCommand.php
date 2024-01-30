@@ -45,7 +45,7 @@ class TranslationsGeneratorCommand extends Command
 */\n\n" . $generatedTranslations;
 
         if (config('matice.use_export_in_generated_translations', false))
-            $generatedTranslations .= "\nexport { Matice };\n"
+            $generatedTranslations .= "\nexport { Matice };\n";
 
         $this->makeDirectory($path);
 
